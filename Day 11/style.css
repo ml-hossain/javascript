@@ -1,0 +1,21 @@
+h1{
+    display: block;
+    text-align: center;
+    font-size: 8em;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.btn{
+    text-align: center;
+}
+.same{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 12px 15px;
+    color: black;
+    background-color: aqua;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn button:hover{
+    background-color: rgb(7, 176, 176);
+    color: white;
+}
