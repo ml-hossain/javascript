@@ -1,30 +1,20 @@
-let add = document.querySelector('.add');
-let remove = document.querySelector('.remove');
-let ul = document.querySelector('ul');
-let input = document.querySelector('input');
-let body = document.querySelector('body');
-let h1 = document.createElement('h4');
-let li; 
+let start = document.querySelector(".start");
+let stop = document.querySelector(".stop");
+let h1 = document.querySelector("h1");
+let int;
 
-
-
-
-add.addEventListener('click', function(){
-    if(input.value.trim() === ""){
-       h1.textContent = 'Right something please';
-       body.appendChild(h1);
+start.addEventListener("click", function () {
+  
+  h1.textContent = count = 10;
+  int = setInterval(function () {
+    count--;
+    h1.textContent = count;
+    if (count === 0) {
+      clearInterval(int);
     }
-    else{
-        body.removeChild(h1);
-       li = document.createElement('li');
-       li.textContent = input.value.trim();
-       ul.appendChild(li);
-    //    input.value = '';
-        
-    }
-})
+  }, 1000);
+});
 
-
-// remove.addEventListener('click', function(){
-//   ul.removeChild(li)
-// })
+stop.addEventListener("click", function () {
+  clearInterval(int);
+});

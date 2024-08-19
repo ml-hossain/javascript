@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+
+}
+.navBar{
+    width: 100%;
+    height: 70px;
+    padding: 0 2%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navBar h2{
+    text-transform: uppercase;
+    font-weight: 400;
+
+}
+.navRight{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.heroSec{
+    position: relative;
+    overflow: hidden;
+    margin: calc(15% - 70px) auto;
+    width: 70%;    
+}
+.heroSec h1{
+    position: relative;
+    font-size: 11vw;
+    line-height: 7.5vw;
+    font-weight: 300;
+    letter-spacing: -10px;
+    text-transform: uppercase;
+    color: rgb(243, 243, 243);
+    z-index: 99;
+}
+.heroSec h1:nth-child(2){
+    text-align: end;
+}
+.heroSec h1:nth-child(3){
+    text-align: center;
+}
+ img{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 30vh;
+    width: 10vw;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 10px;
+}
+.heroSec img:nth-child(4){
+    rotate: 20deg;
+}
+.heroSec img:nth-child(5){
+    rotate: 15deg;
+}
+.heroSec img:nth-child(6){
+    rotate: 10deg;
+}
+.heroSec img:nth-child(7){
+    rotate: 5deg;
+}
+.heroSec img:nth-child(8){
+    rotate: 3deg;
+}

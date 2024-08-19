@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>36</title>
+  <style>
+    .center{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    h1{
+      font-size: 14px;
+      opacity: 0;
+      transition: h1 0.2s ease-in-out;
+    }
+
+    .downloadbar{
+      background-color: rgb(222, 222, 222);
+      height: 8px;
+      width: 300px;
+      border-radius: 100px;
+      position: relative;
+    }
+    .downloadpro{
+      background-color: rgb(21, 196, 27);
+      height: 8px;
+      width: 10%;
+      border-radius: 100px;
+      position: relative;
+      transition: all linear 0.1s;
+    }
+  </style>
+
+</head>
+<body>
+<div class="center">
+  <h1>Download completed</h1>
+  <div class="downloadbar">
+    <div class="downloadpro"></div>
+  </div>
+
+</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
